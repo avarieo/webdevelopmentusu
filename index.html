@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Cool Form</title>
+<link rel="stylesheet" href="style.css" type="text/css"> 
+    </head>
+<body>
+    <h2> Silver City Survey </h2>
+    <form name="formtest" method="post" action="https://elearn.usu.edu/courses/itls-5265/forms/form_results.php">
+        <!-- Put your form code here. -->
+<div id="primary"> 
+ <label for="visit">Primary reason why you visit Silver City: </label> <br> 
+    <div id="reason">
+ <input type="radio" id="visit" name="resident" checked>
+        I am a resident of Silver City <br> 
+ <input type="radio" id="visit" name="work">
+        I work in Silver City <br>
+ <input type="radio" id="visit" name="business">
+        I visit Silver City to shop or visit businesses <br> 
+ <input type="radio" id="visit" name="tourist">
+        Tourist/Vacation <br> 
+ <input type="radio" id="visit" name="other">
+        Other </div>
+        </div> 
+        <br>   
+    <div>
+<label for="zipcode"> Zipcode: </label> <br>
+    <input type="text" id="zipcode"> <br>
+        </div>
+        <br>
+<div>
+   <label for="often">How often do you visit Silver City? </label> <br>
+        <select name="often"> 
+           <option value="live">I live here</option>
+            <option value="several times a week">Several times a week </option>
+            <option value="several times a month">Several times a month </option>
+            <option value="several times a year">Several times a year </option>
+            <option value="once a year or less">Once a year or less</option>
+            <option value="I never visit Silver City">I never visit Silver City </option>    
+        </select>
+        </div>
+        <br>
+    <div>
+<label for="attractive[]">What would make downtown Silver City more attractive for you to visit? (select all that apply) </label> <br>
+        <input type="checkbox" name="attractive[]" value="restaurants">More restaurants<br> 
+        <input type="checkbox" name="attractive[]" value="stores">More specialty stores<br>
+        <input type="checkbox" name="attractive[]" value="shops">More tourist type shops<br>
+        <input type="checkbox" name="attractive[]" value="businesses">
+        More professional businesses <br> 
+        <input type="checkbox" name="attractive[]" value="parking">Additional parking<br> 
+        <input type="checkbox" name="attractive[]" value="bus"> 
+        A bus route from nearby hotels or tourist spots <br>
+        <input type="checkbox" name="attractive[]" value="facelift">
+        Give the place a facelift <br> 
+        <input type="checkbox" name="attractive[]" value="events">
+        Concerts and events held downtown <br>
+        <input type="checkbox" name="attractive[]" value="fewtourists">
+        Fewer tourists and more places for locals 
+        </div>
+        <br>
+    <div>
+<label for="comments">Additional comments and suggestions:</label> <br>
+        <textarea name="comments" id="comments" rows="10" cols="40"> </textarea> 
+        </div> <br>
+<div>
+<label for="email">Email address:<br> 
+    (if you would like to recieve occasional information about what is happening in Silver City) </label> <br>
+        <input type="email" name="emailaddress">
+        <br> <br>
+        </div>
+<div>
+    <div id="thesubmit"></div>
+    <input type="submit" value="Submit">
+</div>
+    </form>
+</body>
+</html>
